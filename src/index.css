@@ -1,8 +1,118 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', 'Oxygen',
+  font-family: 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+h1{
+  font-weight: bold;
+}
+
+.header {
+  padding: 30px;
+  text-align: center;
+  background: rgba(23, 114, 210, 0.65);
+  color: white;
+}
+
+input[type='text'] {
+  width: 50%;
+  padding: 12px 20px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 12px 20px ;
+}
+input[type=text]:focus {
+  border: 3px solid #414946;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+}
+
+input[type=submit], button {
+  background-color: #414946;
+  border: none;
+  border-radius: 10%;
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.reposButton{
+  width: 100%;
+  border-radius: 10px;
+ background-color: rgba(23, 114, 210, 0.65)
+}
+
+.reposButton:hover{
+  background-color: #414946;
+}
+
+.badgeCard {
+  margin: 10px auto;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 20%;
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+.reposColumn {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+  padding-left: 30px;
+}
+.reposCard {
+  background-color: rgba(23, 114, 210, 0.65);
+  padding: 20px;
+  margin-top: 20px;
+  color: white;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 100%;
+  border-radius: 5%;
+}
+
+.reposCard h3 {
+  text-align: center ;
+  color: #414946;
+}
+.reposCard p:first-child {
+  text-align: center;
+}
+
+.reposCard a {
+ color: #414946;
+  font-style:  italic;
+  font-weight: bold;
+}
+
+.reposRow {
+  margin: 10px auto;
+}
+.reposRow:after, .reposCard:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.left{
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.reposValue {
+  color: #414946;
+  font-weight: bold;
 }
